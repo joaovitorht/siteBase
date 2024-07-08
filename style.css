@@ -58,12 +58,14 @@ body {
   background-color: var(--base-color);
   color: var(--text-color-light);
   height: 3.5rem;
+
   display: inline-flex;
   align-items: center;
   padding: 0 2rem;
   border-radius: 0.25rem;
   font: 500 1rem var(--body-font);
   transition: background 0.3s;
+  margin-top: 1rem;
 }
 
 .button:hover{
@@ -93,9 +95,20 @@ body {
   margin-right: 1.5rem;
 }
 
+
+.container-profissional{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .grid{
   display: grid;
   gap: 2rem;
+}
+
+.maps{
+  width: 35rem;
+  height: 35rem;
 }
 
 .section {
@@ -325,12 +338,37 @@ nav.show .icon-close{
   gap: 1.5rem;
 }
 
+.cards-profissional.grid{
+  gap:1rem;
+  position: relative;
+  overflow: hidden;
+}
+.cards-profissional{
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow:hidden;
+}
+
+.text-hidden{
+  overflow: hidden;
+}
+
 .card{
   padding: 3.625rem 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
+}
+
+.card-profissional{
+  padding: 0rem 0rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: 0.30rem solid var(--base-color);
+  border-right: 0.25rem solid var(--base-color);
+  border-top: 0.2rem solid var(--base-color);
+  border-left: 0.15rem solid var(--base-color);
+  border-radius: 0.25rem 0.25rem 0 0;
+  width: 22.7rem;
 }
 
 .card i{
